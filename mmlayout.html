@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: left; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: left;
+      padding: 10px 35px;
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    a:hover {
+      color: rgb(24, 233, 35);
+    }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left main main main  right right'
+    'left footer footer footer footer footer';
+  gap: 5px;
+  background-color: #d6ec0f;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(12, 8, 224, 0.8);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div>
+  
+  <div class="topnav">
+    
+    <a href="Static Webpage.html">LIVE TV</a>
+
+    <a href="Services.html">LATEST</a>
+
+    <a href="gallery.html">ELECTIONS</a>
+
+    <a href="video.html">COVID</a>
+
+    <a href="prices.html">BUDGET</a>
+
+    <a href="contact us.html">INDIA</a>
+    <a href="contact us.html">VIDEO</a>
+    <a href="contact us.html">OPINION</a>
+
+  </div>
+  <div class="grid-container">
+    <div class="item1"><a ><strong>NDTV</strong></a></div>
+  <div class="item2"><h1>Big Story</h1><img src="https://c.ndtvimg.com/2022-02/v2rc5nkc_singapore-pm-twitter_625x300_17_February_22.jpg?downsize=340:209">
+  <p>Singapore PM's Remarks On Indian MPs Uncalled For: Government Sources</p></a></div>
+  <div class="item3"><a href="MAIN"><img src="https://c.ndtvimg.com/2022-02/i9tjljio_karnataka-assembly-congress-protest-ndtv_625x300_17_February_22.jpg?downsize=570:351" > 
+  <p>'Sack Minister For Sedition': Congress Sleepover In Karnataka Assembly</p></a></div>  
+  <div class="item4" ><a href="right"><img src="https://tpc.googlesyndication.com/simgad/5492954429319395860"></a></div>
+  <div class="item5"><a href="footer"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmo3kMBvBRKdsWx7mGLIYFt81mwqKxzab2c_v-9URVkVtShJm" width="100"height="100"></a></div>
+</div>
+
+</body>
+</html>
